@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC Demo</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  </head>
+  <body>
+    <div>
+      <label for="name">Tên của bạn:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <br>
+    <div>
+      <label for="room">Tên phòng:</label>
+      <input type="text" id="room" name="room" required>
+    </div>
+    <br>
+    <button id="join-button">Join</button>
+    <br>
+    <br>
+    <div id="videos"></div>
+    <br>
+    <button id="call-button" disabled>Call</button>
+    <button id="end-call-button" disabled>End Call</button>
+
+    <script src="./js/client.js"></script>
+  </body>
+</html>
